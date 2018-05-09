@@ -1,0 +1,176 @@
+@charset 'utf-8';
+
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand|EB+Garamond");
+
+/*
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+*/
+
+
+/************DEFAULTS***************/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:20px;
+    line-height: 1.5;
+    font-family: Quicksand, Arial, Helvetica,  sans-serif;
+    background-color: #C0B0CC;
+}
+
+/************LAYOUT***************/
+
+.page{
+/*    display:none;*/
+    padding: 1rem;
+    top:1rem;
+    margin-top:3rem;
+    transform: translateX(-200%);
+    transition: transform 1s ease-in;
+    position:absolute;
+}
+.page.active{
+/*    display:block;*/
+    transform:translateX(0);
+}
+
+.note{
+    display:none;
+    
+}
+.attribution{
+    padding:1rem;
+    text-align: center;
+    left:35%;
+    position: fixed;
+    bottom:0;
+/*    background: grey;*/
+    width:100%;
+}
+.attribution img{
+    width:20%;
+    bottom: auto;
+    margin-bottom: auto;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+
+/************SEARCH BAR***************/
+
+.mid{
+    position:fixed;
+    height:3rem;
+    z-index:100;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    border-bottom: 1px solid #333;
+    box-shadow:0 2px 4px #000;
+}
+
+
+#search-button{
+    position:absolute;
+    z-index:120;
+    top:0;
+    right:0;
+    width:3rem;
+    height:3rem;
+    background-color: #dedede;
+    padding:0.5rem;
+    cursor:pointer;  
+      
+}
+
+
+
+#search-input{
+    position:fixed;
+    z-index:110;
+    top:0;
+    height:3rem;
+    width:100%;
+    padding-left: 5rem;
+    font-size: 1.8rem;
+}
+
+.hidden{
+    display: none;
+    
+    
+}
+
+.main_title{
+    display: block;
+}
+
+#name{
+    text-align: center;
+    margin-top: 10rem;
+    display:none;
+}
+/************SEARCH RESULTS***************/
+
+.movie{
+    border: 1px solid #bbb;
+    padding: 1rem;
+    overflow: auto;
+    clear:both;
+    width:750px;
+    margin: 3rem;
+    border-radius: 25px;
+    box-shadow: 5px -5px 20px 10px #706F6C;
+    background-color: #C9C5CC;
+}
+.poster{
+    float: left;
+    background-color: #ddd;
+    width:150px;
+    height:8rem;
+    margin:0 1rem 1rem 0;
+    
+}
+.movie-title{
+    font-family: "EB Garamond", "Times New Roman", Georgia, serif;
+    font-size:2rem;
+    
+}
+p{
+    font-family: "EB Garamond", "Times New Roman", Georgia, serif;
+    font-size: 1.5rem;
+    color:#FEFFF6;
+}
+.movie-desc{
+    font-size:1rem;
+    color:#999;
+    color:#52514F;
+}
+
+#back-button{
+    position:absolute;
+    top:0;
+    left:0;
+    width:3rem;
+    height:3rem;
+    z-index:120;
+    padding:0.5rem;
+    cursor:pointer;
+    
+/*    position:absolute;*/
+/*    top: 1rem;*/
+/*    z-index: 130;*/
+    
+}
+
+/************RECOMENDATIONS***************/
+
+
+@keyframes App-logo-spin {}
